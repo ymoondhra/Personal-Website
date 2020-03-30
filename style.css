@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(125.42deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EBEBEB;
+}
+
+#blue-circles-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.75s ease-in-out;
+}
+
+.mini {
+  border-radius: 50%;
+  border: 1px solid #CF8383;
+  position: absolute;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.25);
+  background-color: #FF9292; 
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-buttons {
+  z-index: 10;
+}
+
+.contact-button-wrapper {
+  margin: 0 0.5rem;
+}
+
+.contact-button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #FEFEFE;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  margin: 0.5rem;
+}
+
+.contact-button-img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
