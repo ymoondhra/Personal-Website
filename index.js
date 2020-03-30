@@ -229,7 +229,13 @@ function initializeMinis() {
     iDiv.style.left = left + "%";
     iDiv.style.top = top + "%";
     // attach to the DOM
-    iDiv = blueCirclesContainer.appendChild(iDiv);
+    var iDivWrapper = document.createElement("a");
+    iDivWrapper.href = "http://bouncingdvdlogo.com/"
+    iDivWrapper.setAttribute("target", "_blank");
+
+    iDivWrapper.appendChild(iDiv);
+
+    blueCirclesContainer.appendChild(iDivWrapper);
     // append to array
     currentCircles.push(new BlueCircle(left, top, width, height, iDiv));
     i++;
