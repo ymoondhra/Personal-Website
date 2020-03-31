@@ -6,7 +6,6 @@
 <html>
 <head>
 	<title>3D Squares</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -119,7 +118,6 @@
 <script>
 function resizePage() {
 	resizeContainer();
-	animate();
 }
 
 function resizeContainer() {
@@ -128,6 +126,7 @@ function resizeContainer() {
 
 		document.getElementById(i).style.opacity = newOpacity(i);
 	}
+	document.getElementById("cont").style.opacity = 1;
 	// var x = document.getElementById("cont").style.color;
 }
 
