@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!-- Started at 10:05 --->
+
+
+<html>
+<head>
+	<title>3D Squares</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="flexin">
+	<div id="cont" class="container">
+		<div id="1" class="rot"> </div>
+		<div id="2" class="rot"> </div>
+		<div id="3" class="rot"> </div>
+		<div id="4" class="rot"> </div>
+		<div id="5" class="rot"> </div>
+		<div id="6" class="rot"> </div>
+		<div id="7" class="rot"> </div>
+		<div id="8" class="rot"> </div>
+		<div id="9" class="rot"> </div>
+		<div id="10" class="rot"> </div>
+		<div id="11" class="rot"> </div>
+		<div id="12" class="rot"> </div>
+		<div id="13" class="rot"> </div>
+		<div id="14" class="rot"> </div>
+		<div id="15" class="rot"> </div>
+		<div id="16" class="rot"> </div>
+		<div id="17" class="rot"> </div>
+		<div id="18" class="rot"> </div>
+		<div id="19" class="rot"> </div>
+		<div id="20" class="rot"> </div>
+		<div id="21" class="rot"> </div>
+		<div id="22" class="rot"> </div>
+		<div id="23" class="rot"> </div>
+		<div id="24" class="rot"> </div>
+		<div id="25" class="rot"> </div>
+		<div id="26" class="rot"> </div>
+		<div id="27" class="rot"> </div>
+		<div id="28" class="rot"> </div>
+		<div id="29" class="rot"> </div>
+		<div id="30" class="rot"> </div>
+		<div id="31" class="rot"> </div>
+		<div id="32" class="rot"> </div>
+		<div id="33" class="rot"> </div>
+		<div id="34" class="rot"> </div>
+		<div id="35" class="rot"> </div>
+		<div id="36" class="rot"> </div>
+		<div id="37" class="rot"> </div>
+		<div id="38" class="rot"> </div>
+		<div id="39" class="rot"> </div>
+		<div id="40" class="rot"> </div>
+		<div id="41" class="rot"> </div>
+		<div id="42" class="rot"> </div>
+		<div id="43" class="rot"> </div>
+		<div id="44" class="rot"> </div>
+		<div id="45" class="rot"> </div>
+		<div id="46" class="rot"> </div>
+		<div id="47" class="rot"> </div>
+		<div id="48" class="rot"> </div>
+		<div id="49" class="rot"> </div>
+		<div id="50" class="rot"> </div>
+		<div id="51" class="rot"> </div>
+		<div id="52" class="rot"> </div>
+		<div id="53" class="rot"> </div>
+		<div id="54" class="rot"> </div>
+		<div id="55" class="rot"> </div>
+		<div id="56" class="rot"> </div>
+		<div id="57" class="rot"> </div>
+		<div id="58" class="rot"> </div>
+		<div id="59" class="rot"> </div>
+		<div id="60" class="rot"> </div>
+		<div id="61" class="rot"> </div>
+		<div id="62" class="rot"> </div>
+		<div id="63" class="rot"> </div>
+		<div id="64" class="rot"> </div>
+		<div id="65" class="rot"> </div>
+		<div id="66" class="rot"> </div>
+		<div id="67" class="rot"> </div>
+		<div id="68" class="rot"> </div>
+		<div id="69" class="rot"> </div>
+		<div id="70" class="rot"> </div>
+		<div id="71" class="rot"> </div>
+		<div id="72" class="rot"> </div>
+		<div id="73" class="rot"> </div>
+		<div id="74" class="rot"> </div>
+		<div id="75" class="rot"> </div>
+		<div id="76" class="rot"> </div>
+		<div id="77" class="rot"> </div>
+		<div id="78" class="rot"> </div>
+		<div id="79" class="rot"> </div>
+		<div id="80" class="rot"> </div>
+		<div id="81" class="rot"> </div>
+		<div id="82" class="rot"> </div>
+		<div id="83" class="rot"> </div>
+		<div id="84" class="rot"> </div>
+		<div id="85" class="rot"> </div>
+		<div id="86" class="rot"> </div>
+		<div id="87" class="rot"> </div>
+		<div id="88" class="rot"> </div>
+		<div id="89" class="rot"> </div>
+		<div id="90" class="rot"> </div>
+		<div id="91" class="rot"> </div>
+		<div id="92" class="rot"> </div>
+		<div id="93" class="rot"> </div>
+		<div id="94" class="rot"> </div>
+		<div id="95" class="rot"> </div>
+		<div id="96" class="rot"> </div>
+		<div id="97" class="rot"> </div>
+		<div id="98" class="rot"> </div>
+		<div id="99" class="rot"> </div>
+		<div id="100" class="rot"> </div>
+	</div>
+</body>
+</html>
+
+<script>
+function resizePage() {
+	resizeContainer();
+	animate();
+}
+
+function resizeContainer() {
+	for(var i = 1; i < 101; i++)
+	{
+
+		document.getElementById(i).style.opacity = newOpacity(i);
+	}
+	// var x = document.getElementById("cont").style.color;
+}
+
+function newOpacity(i)
+{
+	var newOpac;
+	newOpac = ((i%11)/11);
+	return newOpac;
+}
+
+window.onload = function() {
+	resizePage();
+}
+</script>
